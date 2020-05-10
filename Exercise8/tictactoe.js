@@ -1,6 +1,22 @@
 let currentPlayer = "X";
 let gameStatus = "";
 let numTurns = 0;
+let idNames = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+
+
+function newGame() {
+for (var i = 0; i < idNames.length; i++){
+	document.getElementById(idNames[i]).innerHTML = "";
+}//for
+
+	numTurns = 0;
+	gameStatus = "";
+	currentPlayer = "X";
+
+	changeVisibility("controls");
+
+}//newGame
+
 
 
 function playerTakeTurn(e) {
@@ -8,14 +24,20 @@ function playerTakeTurn(e) {
 	if (e.innerHTML == "") {
 		e.innerHTML = currentPlayer;
 		checkGameStatus();
+
+		if (gameStatus == "") {
+			setTimeout(function() {
+			computerTakeTurn();
+			checkGameStatus();
+				}, 500
+			);
+		}
+
+
 	} else {
 		showLightBox("This box is already selected.", "Please try another box.");
 		return;
 	}//else
-
-	if (gameStatus != "") {
-		showLightBox(gameStatus, "Game Over.")
-	}
 
 
 }//playerTakeTurn
@@ -34,6 +56,10 @@ function checkGameStatus() {
 
 	currentPlayer = (currentPlayer == "X" ? "O" : "X");
 
+	if (gameStatus != "") {
+		setTimeout(function() {showLightBox(gameStatus, "Game Over.");}, 500);
+	}
+
 }//checkGameStatus
 
 
@@ -48,6 +74,8 @@ function checkWin() {
 	cb[7] = document.getElementById("seven").innerHTML;
 	cb[8] = document.getElementById("eight").innerHTML;
 	cb[9] = document.getElementById("nine").innerHTML;
+
+	console.log("first row: " + cb[1] + " " + cb[2] + " " + cb[3] + " ");
 
 //top row check for win
 	if (cb[1] != "" && cb[1] == cb[2] && cb[2] == cb[3]) {
@@ -109,6 +137,30 @@ function continueGame() {
 changeVisibility("lightbox");
 changeVisibility("boundaryMessage");
 
+	if (gameStatus != "") {
+		changeVisibility("controls");
+	}
+
+}//continueGame
+
+
+function computerTakeTurn(){
+let idName = "";
+
+do {
+let rand = parseInt(Math.random()*9) + 1;
+idName = idNames[rand-1];
+
+if (document.getElementById(idName).innerHTML == "") {
+	document.getElementById(idName).innerHTML = currentPlayer;
+	break;
+}
+
+}while(true);
 
 }
+
+
+
+
 
