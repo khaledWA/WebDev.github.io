@@ -1,0 +1,126 @@
+
+body {
+	background-color: black;
+}
+
+#gameBoard {
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: 120px 120px 120px 120px 120px;
+	grid-template-rows: 120px 120px 120px 120px 120px;
+	justify-content: center;
+	width: 600px;
+	height: 600px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#gameBoard div {
+	background-color: #00EE00;
+	
+}
+
+.horser {
+	background-image: url("imgs/horseright.png");
+}
+
+.rock {
+	background-image: url("imgs/rock.png");
+}
+
+.horsel {
+	background-image: url("imgs/horseleft.png");
+}
+
+.horsed {
+	background-image: url("imgs/horsedown.png");
+}
+
+.horseu {
+	background-image: url("imgs/horseup.png");
+}
+
+.flag {
+	background-image: url("imgs/flag.png");
+}
+
+.water {
+	background-image: url("imgs/water.png");
+}
+
+.albert {
+	background-image: url("imgs/albert.png");
+}
+
+.fenceu {
+	background-image: url("imgs/fenceu.png");
+}
+
+.fencef {
+	background-image: url("imgs/fencef.png");
+}
+
+. {
+	background-image: url("imgs/fenced.png");
+}
+
+. {
+	background-image: url("imgs/fencel.png");
+}
+
+.hau {
+	background-image: url("imgs/horsealbertu.png");
+}
+
+.har {
+	background-image: url("imgs/horsealbertr.png");
+}
+
+.had {
+	background-image: url("imgs/horsealbertd.png");
+}
+
+.hal {
+	background-image: url("imgs/horsealbertl.png");
+}
+
+.hru {
+	background-image: url("imgs/horserideru.png");
+}
+
+.hrr {
+	background-image: url("imgs/horseriderr.png");
+}
+
+.hrd {
+	background-image: url("imgs/horseriderd.png");
+}
+
+.hrl {
+	background-image: url("imgs/horseriderl.png");
+}
+
+.tree {
+	background-image: url("imgs/tree.png");
+}
+
+.fju {
+	background-image: url("imgs/fenjumpu.png");
+}
+
+.fjr {
+	background-image: url("imgs/fenjumpr.png");
+}
+
+.fjd {
+	background-image: url("imgs/fenjumpd.png");
+}
+
+.fjl {
+	background-image: url("imgs/fenjumpl.png");
+}
+
+.bridge {
+	background-color: #800020 !important;
+}
