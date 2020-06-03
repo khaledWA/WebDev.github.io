@@ -41,7 +41,7 @@ const levels = [
 
  	animateBoxes = document.querySelectorAll(".animate");
 
- 	animateEnemy(animateBoxes, 1, "right");
+ 	animateEnemy(animateBoxes, 1, "down");
 
  }//loadLevel
 
