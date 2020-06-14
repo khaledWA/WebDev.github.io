@@ -1,0 +1,252 @@
+
+body {
+	background-color: black;
+}
+
+#gameBoard {
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: 125px 125px 125px 125px 125px;
+	grid-template-rows: 125px 125px 125px 125px 125px;
+	justify-content: center;
+	width: 600px;
+	height: 600px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#gameBoard div {
+	background-color: #9400D3;
+	
+}
+
+.horseright {
+	background-image: url("imgs/horser.png");
+}
+
+.rock {
+	background-image: url("imgs/rock.png");
+}
+
+.horseleft {
+	background-image: url("imgs/horsel.png");
+}
+
+.horsedown {
+	background-image: url("imgs/horsed.png");
+}
+
+.horseup {
+	background-image: url("imgs/horse.png");
+}
+
+.flag {
+	background-image: url("imgs/flag.png");
+}
+
+.water {
+	background-image: url("imgs/water.png");
+}
+
+.rider {
+	background-image: url("imgs/rider.png");
+}
+
+.fenceup {
+	background-image: url("imgs/fenceup.png");
+}
+
+.fenceside {
+	background-image: url("imgs/fenceside.png");
+}
+
+.horseriderup {
+	background-image: url("imgs/horseride.png");
+}
+
+.horseriderright {
+	background-image: url("imgs/horserider.png");
+}
+
+.horseriderdown {
+	background-image: url("imgs/horserided.png");
+}
+
+.horseriderleft {
+	background-image: url("imgs/horseridel.png");
+}
+
+.enemyup {
+	background-image: url("imgs/enemy.png");
+}
+
+.enemyright {
+	background-image: url("imgs/enemyr.png");
+}
+
+.enemydown {
+	background-image: url("imgs/enemyd.png");
+}
+
+.enemyleft {
+	background-image: url("imgs/enemyl.png");
+}
+
+.tree {
+	background-image: url("imgs/tree.png");
+}
+
+.fenjumpup {
+	background-image: url("imgs/fenjump.png");
+}
+
+.fenjumpright {
+	background-image: url("imgs/fenjumpr.png");
+}
+
+.fenjumpdown {
+	background-image: url("imgs/fenjumpd.png");
+}
+
+.fenjumpleft {
+	background-image: url("imgs/fenjumpl.png");
+}
+
+.girl {
+	background-image: url("imgs/girl.png");
+}
+
+.bridge {
+	background-color: #800020 !important;
+}
+
+
+
+.message {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	font-family: "Times New Roman",sans-serif;
+	font-size: 8em;
+	vertical-align: top;
+	text-align: center;
+	line-height: 100vh;
+	z-index: 2;
+}
+
+
+
+/*** LightBox CSS Start ***/
+
+#lightbox {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 1;
+}
+
+	.hidden {
+		display: none;
+	}
+
+	.unhidden {
+		display: block;
+	}
+
+#positionMessage{
+	position: absolute;
+	top: 45px;
+	left: 0px;
+	width: 100%;
+	z-index: 2;
+
+}
+
+
+#boundaryMessage{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 200px;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 1;
+	padding: 30px;
+	border: thick solid #512b58;
+	z-index: 2;
+}
+
+/*** LightBox CSS End ***/
+
+#controls {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+#newbutton {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	height: 40px;
+	width: 100px;
+	background-color: #2a7886;
+	color: #512b58;
+	border-width: 4px;
+	font-size: 12px;
+}
+
+#startGame {
+	border: thick solid black;
+	background-color: pink;
+	top: 50px;
+
+}
+
+
+
+/***** Control Panel *****/
+#controlpanel {
+	position: absolute;
+	top: 30px;
+	right: 95px;
+	z-index: 3;
+}
+
+.controls {
+	display: inline-block;
+	padding: 6px;
+	width: 90px;
+	height: 20px;
+	background-color: #00EE00;
+	color: white;
+	vertical-align: top;
+	text-align: center;
+	line-height: 20px;
+	font-size: 0.7em;
+	border-radius: 7px;
+	z-index: 3;
+
+}
+
+
+/***** Control Panel *****/
+
+
+#startGame {
+	text-decoration: red;
+
+}
+
